@@ -8,7 +8,7 @@ public class LogToFile : MonoBehaviour
     void Start()
     {
         // 로그 파일 경로 설정
-        string logsFolderPath = "D:/.DEV/Yuhan_Game_Data_Analysis/CoinGame/Log"; // 로그 파일을 저장할 폴더 경로
+        string logsFolderPath = "D:/.DEV/Yuhan_Game_Data/CoinGame/Log"; // 로그 파일을 저장할 폴더 경로
         if (!Directory.Exists(logsFolderPath))
         {
             Directory.CreateDirectory(logsFolderPath); // 폴더가 없으면 생성
