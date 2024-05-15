@@ -25,11 +25,8 @@ public class Name : MonoBehaviour
         }
     }
     
-
-    //게임 종료
-    public void GameExit()
+    public void GameExitData()
     {
-        Debug.Log("게임이 종료됩니다.");
         string playerName = nameInputField.text;
         DateTime EndTime = DateTime.Now;
         string GameEndTime = EndTime.ToString("yyyy-MM-dd HH:mm:ss");
@@ -47,6 +44,13 @@ public class Name : MonoBehaviour
         {
             Debug.Log("저장된 시간이 없소");
         }
+    }
+
+    //게임 종료
+    public void GameExit()
+    {
+        Debug.Log("게임이 종료됩니다.");
+       
 
         //게임 종료
         Application.Quit();

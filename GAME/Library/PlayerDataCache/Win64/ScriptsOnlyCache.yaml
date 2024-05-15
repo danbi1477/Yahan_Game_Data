@@ -8,7 +8,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -170,8 +169,14 @@ ScriptsOnlyBuild:
     fullTypeName: Name
     methodName: GameExit
   - assembly: Assembly-CSharp
+    fullTypeName: Name
+    methodName: GameExitData
+  - assembly: Assembly-CSharp
     fullTypeName: New_Coin
     methodName: reset
+  - assembly: Assembly-CSharp
+    fullTypeName: Name
+    methodName: GameExitData
   - assembly: Assembly-CSharp
     fullTypeName: New_Coin
     methodName: Back
@@ -331,45 +336,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9122}
     - Class: 114
-      Script: {instanceID: 9360}
+      Script: {instanceID: 9168}
     - Class: 114
-      Script: {instanceID: 9444}
+      Script: {instanceID: 9362}
     - Class: 114
-      Script: {instanceID: 9684}
+      Script: {instanceID: 9446}
     - Class: 114
-      Script: {instanceID: 9754}
+      Script: {instanceID: 9686}
     - Class: 114
-      Script: {instanceID: 10302}
+      Script: {instanceID: 9756}
     - Class: 114
-      Script: {instanceID: 10358}
+      Script: {instanceID: 10304}
     - Class: 114
-      Script: {instanceID: 10404}
+      Script: {instanceID: 10360}
     - Class: 114
-      Script: {instanceID: 10590}
+      Script: {instanceID: 10406}
     - Class: 114
-      Script: {instanceID: 10828}
+      Script: {instanceID: 10592}
     - Class: 114
-      Script: {instanceID: 11110}
+      Script: {instanceID: 10830}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11306}
+      Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11308}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11400}
     - Class: 114
-      Script: {instanceID: 11644}
+      Script: {instanceID: 11508}
+    - Class: 114
+      Script: {instanceID: 11646}
     - Class: 114
       Script: {instanceID: 11898}
     - Class: 114
       Script: {instanceID: 12060}
     - Class: 114
       Script: {instanceID: 12660}
-    - Class: 114
-      Script: {instanceID: 49622}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1465,6 +1470,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerToggleHistory
   - hash:
       serializedVersion: 2
+      Hash: 1f613fe4fee28702e9cbce562f64296d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: New_Coin
+  - hash:
+      serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1919,12 +1930,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 1f613fe4fee28702e9cbce562f64296d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: New_Coin
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
