@@ -2,8 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CoinGame
-    - LogToFile
-    - LogToGoogleSheet
+    - DataUploader
+    - Name
+    - New_Coin
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -74,8 +75,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineGlobalSettings
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.ShaderGraph.Editor.dll:
-    - UnityEditor.ShaderGraph.ShaderGraphProjectSettings
     Unity.TextMeshPro:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -113,6 +112,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.Text
   serializedClasses:
     Unity.RenderPipelines.Core.Runtime:
     - UnityEngine.Rendering.UI.DebugUIPrefabBundle
@@ -155,6 +156,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.FontData
+    - UnityEngine.UI.InputField/EndEditEvent
+    - UnityEngine.UI.InputField/OnChangeEvent
+    - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
@@ -162,6 +166,27 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: Name
+    methodName: GameExit
+  - assembly: Assembly-CSharp
+    fullTypeName: New_Coin
+    methodName: reset
+  - assembly: Assembly-CSharp
+    fullTypeName: New_Coin
+    methodName: Back
+  - assembly: Assembly-CSharp
+    fullTypeName: Name
+    methodName: PlayTime
+  - assembly: Assembly-CSharp
+    fullTypeName: Name
+    methodName: SavePlayerName
+  - assembly: Assembly-CSharp
+    fullTypeName: New_Coin
+    methodName: Front
+  - assembly: Assembly-CSharp
+    fullTypeName: New_Coin
+    methodName: CoinGet
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: OnScrollbarClicked
@@ -211,6 +236,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
@@ -219,10 +246,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 102
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1772}
     - Class: 114
       Script: {instanceID: 1774}
     - Class: 114
@@ -232,111 +259,117 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1780}
     - Class: 114
-      Script: {instanceID: 1788}
+      Script: {instanceID: 1782}
     - Class: 114
-      Script: {instanceID: 1818}
+      Script: {instanceID: 1790}
     - Class: 114
-      Script: {instanceID: 1926}
+      Script: {instanceID: 1820}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 1928}
     - Class: 114
-      Script: {instanceID: 2474}
+      Script: {instanceID: 2266}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 2480}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3350}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 3488}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 4014}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 4744}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 3928}
     - Class: 114
-      Script: {instanceID: 4844}
+      Script: {instanceID: 4028}
     - Class: 114
-      Script: {instanceID: 4898}
+      Script: {instanceID: 4764}
     - Class: 114
-      Script: {instanceID: 5048}
+      Script: {instanceID: 4806}
     - Class: 114
-      Script: {instanceID: 5064}
+      Script: {instanceID: 4866}
     - Class: 114
-      Script: {instanceID: 5520}
+      Script: {instanceID: 4920}
     - Class: 114
-      Script: {instanceID: 5526}
+      Script: {instanceID: 5072}
     - Class: 114
-      Script: {instanceID: 5586}
+      Script: {instanceID: 5088}
     - Class: 114
-      Script: {instanceID: 5682}
+      Script: {instanceID: 5546}
     - Class: 114
-      Script: {instanceID: 5760}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 6106}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 6156}
+      Script: {instanceID: 5710}
     - Class: 114
-      Script: {instanceID: 6950}
+      Script: {instanceID: 5788}
     - Class: 114
-      Script: {instanceID: 7062}
+      Script: {instanceID: 6138}
     - Class: 114
-      Script: {instanceID: 7830}
+      Script: {instanceID: 6190}
     - Class: 114
-      Script: {instanceID: 7892}
+      Script: {instanceID: 6992}
     - Class: 114
-      Script: {instanceID: 8026}
+      Script: {instanceID: 7104}
     - Class: 114
-      Script: {instanceID: 8206}
+      Script: {instanceID: 7876}
     - Class: 114
-      Script: {instanceID: 8386}
+      Script: {instanceID: 7938}
     - Class: 114
-      Script: {instanceID: 8716}
+      Script: {instanceID: 8072}
     - Class: 114
-      Script: {instanceID: 9006}
+      Script: {instanceID: 8252}
     - Class: 114
-      Script: {instanceID: 9070}
+      Script: {instanceID: 8434}
     - Class: 114
-      Script: {instanceID: 9308}
+      Script: {instanceID: 8766}
     - Class: 114
-      Script: {instanceID: 9390}
+      Script: {instanceID: 9056}
     - Class: 114
-      Script: {instanceID: 9626}
+      Script: {instanceID: 9122}
     - Class: 114
-      Script: {instanceID: 9696}
+      Script: {instanceID: 9360}
     - Class: 114
-      Script: {instanceID: 10242}
+      Script: {instanceID: 9444}
     - Class: 114
-      Script: {instanceID: 10298}
+      Script: {instanceID: 9684}
     - Class: 114
-      Script: {instanceID: 10342}
+      Script: {instanceID: 9754}
     - Class: 114
-      Script: {instanceID: 10528}
+      Script: {instanceID: 10302}
     - Class: 114
-      Script: {instanceID: 10766}
+      Script: {instanceID: 10358}
     - Class: 114
-      Script: {instanceID: 11046}
+      Script: {instanceID: 10404}
     - Class: 114
-      Script: {instanceID: 11168}
+      Script: {instanceID: 10590}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 10828}
     - Class: 114
-      Script: {instanceID: 11248}
+      Script: {instanceID: 11110}
     - Class: 114
-      Script: {instanceID: 11330}
+      Script: {instanceID: 11236}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 11574}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 11822}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 12576}
+      Script: {instanceID: 11506}
     - Class: 114
-      Script: {instanceID: 34428}
+      Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 34606}
+      Script: {instanceID: 11898}
+    - Class: 114
+      Script: {instanceID: 12060}
+    - Class: 114
+      Script: {instanceID: 12660}
+    - Class: 114
+      Script: {instanceID: 49622}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -344,6 +377,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -684,6 +719,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime
     namespaceName: 
     className: SpriteShapeGeometryCache
+  - hash:
+      serializedVersion: 2
+      Hash: b8580900b567ce59d2d6dc6265f61db7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DataUploader
   - hash:
       serializedVersion: 2
       Hash: 682dfc653b22feea53b38adb3bc66414
@@ -1130,7 +1171,7 @@ ScriptsOnlyBuild:
     className: Volume
   - hash:
       serializedVersion: 2
-      Hash: 3594b9b92356bc22387ea65fb65e6b91
+      Hash: cdc662d85448a921ea58a7af56429d67
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CoinGame
@@ -1742,6 +1783,18 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerObjectList
   - hash:
       serializedVersion: 2
+      Hash: 72e8a0f4de9fb6aaef7f9040390245f5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SendDataToGoogleScript
+  - hash:
+      serializedVersion: 2
+      Hash: 5c4e3351755ff344a7aa6832ae14d316
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LogToFile
+  - hash:
+      serializedVersion: 2
       Hash: c4b85a67513b4f0cf7b5fb2d5ded04b0
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1800,6 +1853,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime
     namespaceName: UnityEngine.U2D
     className: SpriteShape
+  - hash:
+      serializedVersion: 2
+      Hash: 23d31688fb5c188e4eb15453d9b25028
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Name
   - hash:
       serializedVersion: 2
       Hash: 67272c9c30c50b68ef1ce72ac0191c57
@@ -1862,23 +1921,11 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 5c4e3351755ff344a7aa6832ae14d316
+      Hash: 1f613fe4fee28702e9cbce562f64296d
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: LogToFile
-  - hash:
-      serializedVersion: 2
-      Hash: 22fcd54fe9971b77c49e64d938d9bf67
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: LogToGoogleSheet
-  - hash:
-      serializedVersion: 2
-      Hash: 72e8a0f4de9fb6aaef7f9040390245f5
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SendDataToGoogleScript
+    className: New_Coin
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/.DEV/Yuhan_Game_Data_Analysis/CoinGame/Coin.exe
+  playerPath: D:/.DEV/Yuhan_Game_Data/CoinGame/Coin.exe
