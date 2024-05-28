@@ -267,127 +267,127 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1800}
     - Class: 114
-      Script: {instanceID: 1776}
+      Script: {instanceID: 1802}
     - Class: 114
-      Script: {instanceID: 1778}
+      Script: {instanceID: 1804}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 1806}
     - Class: 114
-      Script: {instanceID: 1782}
+      Script: {instanceID: 1808}
     - Class: 114
-      Script: {instanceID: 1790}
+      Script: {instanceID: 1816}
     - Class: 114
-      Script: {instanceID: 1820}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 1928}
+      Script: {instanceID: 1954}
     - Class: 114
-      Script: {instanceID: 2266}
+      Script: {instanceID: 2292}
     - Class: 114
-      Script: {instanceID: 2480}
+      Script: {instanceID: 2404}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 2508}
     - Class: 114
-      Script: {instanceID: 2958}
+      Script: {instanceID: 2864}
     - Class: 114
-      Script: {instanceID: 3288}
+      Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 3358}
+      Script: {instanceID: 3316}
     - Class: 114
-      Script: {instanceID: 3496}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3928}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 4028}
+      Script: {instanceID: 3956}
     - Class: 114
-      Script: {instanceID: 4764}
+      Script: {instanceID: 4056}
     - Class: 114
-      Script: {instanceID: 4806}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 4866}
+      Script: {instanceID: 4834}
     - Class: 114
-      Script: {instanceID: 4920}
+      Script: {instanceID: 4894}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 4948}
     - Class: 114
-      Script: {instanceID: 5088}
+      Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 5546}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5552}
+      Script: {instanceID: 5574}
     - Class: 114
-      Script: {instanceID: 5614}
+      Script: {instanceID: 5580}
     - Class: 114
-      Script: {instanceID: 5710}
+      Script: {instanceID: 5642}
     - Class: 114
-      Script: {instanceID: 5788}
+      Script: {instanceID: 5738}
     - Class: 114
-      Script: {instanceID: 6138}
+      Script: {instanceID: 5816}
     - Class: 114
-      Script: {instanceID: 6190}
+      Script: {instanceID: 6166}
     - Class: 114
-      Script: {instanceID: 6992}
+      Script: {instanceID: 6218}
     - Class: 114
-      Script: {instanceID: 7104}
+      Script: {instanceID: 7020}
     - Class: 114
-      Script: {instanceID: 7876}
+      Script: {instanceID: 7132}
     - Class: 114
-      Script: {instanceID: 7938}
+      Script: {instanceID: 7904}
     - Class: 114
-      Script: {instanceID: 8072}
+      Script: {instanceID: 7966}
     - Class: 114
-      Script: {instanceID: 8252}
+      Script: {instanceID: 8100}
     - Class: 114
-      Script: {instanceID: 8434}
+      Script: {instanceID: 8280}
     - Class: 114
-      Script: {instanceID: 8766}
+      Script: {instanceID: 8462}
     - Class: 114
-      Script: {instanceID: 9056}
+      Script: {instanceID: 8794}
     - Class: 114
-      Script: {instanceID: 9122}
+      Script: {instanceID: 9084}
     - Class: 114
-      Script: {instanceID: 9168}
+      Script: {instanceID: 9150}
     - Class: 114
-      Script: {instanceID: 9362}
+      Script: {instanceID: 9196}
     - Class: 114
-      Script: {instanceID: 9446}
+      Script: {instanceID: 9390}
     - Class: 114
-      Script: {instanceID: 9686}
+      Script: {instanceID: 9474}
     - Class: 114
-      Script: {instanceID: 9756}
+      Script: {instanceID: 9714}
     - Class: 114
-      Script: {instanceID: 10304}
+      Script: {instanceID: 9784}
     - Class: 114
-      Script: {instanceID: 10360}
+      Script: {instanceID: 10332}
     - Class: 114
-      Script: {instanceID: 10406}
+      Script: {instanceID: 10388}
     - Class: 114
-      Script: {instanceID: 10592}
+      Script: {instanceID: 10434}
     - Class: 114
-      Script: {instanceID: 10830}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 11112}
+      Script: {instanceID: 10858}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11140}
     - Class: 114
-      Script: {instanceID: 11308}
+      Script: {instanceID: 11266}
     - Class: 114
-      Script: {instanceID: 11318}
+      Script: {instanceID: 11336}
     - Class: 114
-      Script: {instanceID: 11400}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11428}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11536}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11674}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 11926}
     - Class: 114
-      Script: {instanceID: 12660}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 40156}
+      Script: {instanceID: 12688}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -515,6 +515,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDropMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 1977e482ff75419730029cbcfd4f8727
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MMoney
   - hash:
       serializedVersion: 2
       Hash: 00bcfff150a932126a4ea840d0861a6b
@@ -1943,12 +1949,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 1977e482ff75419730029cbcfd4f8727
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MMoney
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
