@@ -3,11 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CoinGame
     - DataUploader
+    - MMoney
     - Name
     - New_Coin
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
+    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -180,6 +182,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: New_Coin
     methodName: Back
+  - assembly: Assembly-CSharp
+    fullTypeName: MMoney
+    methodName: Money_OK
+  - assembly: Assembly-CSharp
+    fullTypeName: Name
+    methodName: MoneyLog
+  - assembly: Assembly-CSharp
+    fullTypeName: New_Coin
+    methodName: MoneyEnd
   - assembly: Assembly-CSharp
     fullTypeName: Name
     methodName: PlayTime
@@ -375,6 +386,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12060}
     - Class: 114
       Script: {instanceID: 12660}
+    - Class: 114
+      Script: {instanceID: 40156}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1470,7 +1483,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerToggleHistory
   - hash:
       serializedVersion: 2
-      Hash: 1f613fe4fee28702e9cbce562f64296d
+      Hash: bb53430ef7480139841e7605553c4197
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: New_Coin
@@ -1866,7 +1879,7 @@ ScriptsOnlyBuild:
     className: SpriteShape
   - hash:
       serializedVersion: 2
-      Hash: 23d31688fb5c188e4eb15453d9b25028
+      Hash: e1e52b510b3b1c7b79e9c1b902183013
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Name
@@ -1930,6 +1943,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 1977e482ff75419730029cbcfd4f8727
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MMoney
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

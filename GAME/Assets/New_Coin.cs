@@ -14,6 +14,11 @@ public class New_Coin : MonoBehaviour
     public GameObject CoinFront;
     public GameObject CoinBack;
     public DataUploader dataUploader; // DataUploader 스크립트 연결
+    public Name name;
+    public GameObject MoneySuccess;
+    public GameObject gamePlayScreen;
+    public GameObject MoneyScreen;
+
 
     public int TotalMoney=1000;
     public int Coin;
@@ -29,6 +34,7 @@ public class New_Coin : MonoBehaviour
     {
         Restart.gameObject.SetActive(false);
         Coin = 100;
+        MoneySuccess.gameObject.SetActive(false);
     }
 
     public void Front()
@@ -95,9 +101,9 @@ public class New_Coin : MonoBehaviour
         
         if(Coin <= 0)
         {
+            MoneyScreen.SetActive(true);
             TotalMoney -= 500;
-            TotalMoney_500 += 1;
-
+            //TotalMoney_500 += 1;
         }
         else if(Coin == 100)
         {
@@ -119,6 +125,11 @@ public class New_Coin : MonoBehaviour
         SceneManager.LoadScene(0);
 
     }
+    public void MoneyEnd()
+    {
+        MoneySuccess.SetActive(false);
+        TotalMoney = 1000;
+    }
 
     // Update is called once per frame
     void Update()
@@ -139,5 +150,18 @@ public class New_Coin : MonoBehaviour
             gameOver = true;
             Restart.gameObject.SetActive(true);
         }
+
+        if(TotalMoney >= 5000)
+        {
+            MoneySuccess.gameObject.SetActive(true);
+            Debug.Log("돈 로그 성공4");
+        }
+        else { }
+        /*
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TotalMoney = 5000;
+            Debug.Log("돈 얻음!");
+        }*/
     }
 }

@@ -18,29 +18,33 @@ public class DataUploader : MonoBehaviour
         StartCoroutine(PostData(playerName, "name"));
     }
     */
+
     //플레이 시작 타임
     public void PlayTimeUploadData(string playerName, string GamePlayTime) // 플레이어 네임 인자 추가
     {
         StartCoroutine(PostData(playerName, GamePlayTime, "PlayTime")); // 포스트데이타 메서드도 인자 2개받을수있게 추가
     }
+
     //끝난 타임
     public void EndTimeUploadData(string playerName, string GameEndTime)
     {
         StartCoroutine(PostData(playerName, GameEndTime, "EndTime"));
     }
+
     /*
     //업그레이드 횟수
     public void UpgradeUploadData(string playerName, string GatCoinCount)
     {
         StartCoroutine(PostData(playerName, GatCoinCount, "Up"));
     }
-
+    */
     //돈
     public void MoneyUploadData(string playerName, string Money)
     {
         StartCoroutine(PostData(playerName, Money, "capitalMoney"));
+        Debug.Log("돈 로그 성공1");
     }
-    */
+    
     IEnumerator PostData(string playerName, string type, string typeName)
     {
 
@@ -72,14 +76,15 @@ public class DataUploader : MonoBehaviour
             string data = "{\"PlayerName\": \"" + playerName + "\",\"Up\": \"" + type + "\"}";
 
             jsonData = System.Text.Encoding.UTF8.GetBytes(data);
-        }
+        }*/
 
         else if (typeName == "capitalMoney")
         {
             string data = "{\"PlayerName\": \"" + playerName + "\",\"Money\": \"" + type + "\"}";
 
             jsonData = System.Text.Encoding.UTF8.GetBytes(data);
-        }*/
+            Debug.Log("돈 로그 성공!");
+        }
 
 
         // POST 요청 생성

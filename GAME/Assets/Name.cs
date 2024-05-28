@@ -11,7 +11,12 @@ public class Name : MonoBehaviour
     public GameObject start;
     public DataUploader dataUploader; // DataUploader 스크립트 연결
     public int UpgradeCount=0;
-    public New_Coin  new_coin;
+    New_Coin  new_coin;
+    bool _money=false;
+    string success = "success";
+    public static int a = 0;
+
+
 
     public void Upgrade()
     {
@@ -59,6 +64,8 @@ public class Name : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
         gameObject.SetActive(true);
         //이름 초기화
         PlayerPrefs.DeleteKey("PlayerName");
@@ -133,12 +140,13 @@ public class Name : MonoBehaviour
         {
             Debug.Log("저장된 업그레이드가 없소");
         }
-    }
+    }*/
+
     //돈
     public void MoneyLog()
     {
         string playerName = nameInputField.text;
-        string Money = new_coin.TotalMoney.ToString();
+        string Money = success.ToString();
         PlayerPrefs.SetString("capitalMoney", Money);
 
         if (!string.IsNullOrEmpty(Money))
@@ -148,19 +156,17 @@ public class Name : MonoBehaviour
 
             // DataUploader 스크립트의 PlayTimeUploadData 함수 호출하여 데이터 업로드
             dataUploader.MoneyUploadData(playerName, Money);
+            Debug.Log("돈 로그 성공2");
+            
         }
         else
         {
             Debug.Log("저장된 돈이 없소");
         }
     }
-    */
-
-
-
     // Update is called once per frame
     void Update()
     {
-
+        //if(a == 1) { MoneyLog(); }
     }
 }
